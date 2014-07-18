@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+if [ -f $ENV_DIR/PROCFILE_PATH ]; then
+  PROCFILE_PATH=`cat $ENV_DIR/PROCFILE_PATH`
+  mv $BUILD_DIR/$PROCFILE_PATH $BUILD_DIR/Procfile
+  echo "-----> Using $PROCFILE_PATH as Procfile"
+else
+  echo "-----> PROCFILE_PATH not set in environment, doing nothing."
+fi

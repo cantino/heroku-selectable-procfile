@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Selectable Procfile"
+exit 0
