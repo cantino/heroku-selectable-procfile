@@ -5,7 +5,7 @@ heroku-selectable-procfile
 
 Add this buildpack to your Heroku app buildpacks :
 
-    $ heroku buildpacks:add https://github.com/Nereo/heroku-selectable-procfile
+    $ heroku buildpacks:add https://github.com/cantino/heroku-selectable-procfile
 
 Specify your custom Procfile path in the environment variables :
 
